@@ -114,8 +114,8 @@ function removeExpiredNotes() {
     const validNotes = notes.filter(note => {
         const age = now - note.timestamp;
 
-        // 24 Stunden
-        return age < 24 * 60 * 60 * 1000;
+        // 7 Tage
+return age < 7 * 24 * 60 * 60 * 1000;
     });
 
     saveNotes(validNotes);

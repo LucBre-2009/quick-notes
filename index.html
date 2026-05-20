@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Notes</title>
+
+    <!-- CSS-Datei -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="topbar">
+            <h1 id="title">Meine Notizen</h1>
+
+            <!-- Sprachwechsler -->
+            <div class="language-switcher">
+                <button id="deBtn" class="lang-btn active">DE</button>
+                <button id="enBtn" class="lang-btn">EN</button>
+            </div>
+        </header>
+
+        <!-- Hinweis -->
+        <div class="info-box" id="infoText">
+            Hinweis: Notizen werden nur für 1 Tag im Browser gespeichert.
+            Nutze den JSON-Export für eine dauerhafte Sicherung oder den Transfer auf andere Geräte.
+        </div>
+
+        <!-- Notiz erstellen -->
+        <section class="card">
+            <h2 id="createTitle">Notiz erstellen</h2>
+
+            <textarea
+                id="noteInput"
+                placeholder="Deine Notiz schreiben..."
+            ></textarea>
+
+            <button id="saveBtn" class="primary-btn">
+                Notiz speichern
+            </button>
+        </section>
+
+        <!-- Aktionen -->
+        <section class="card">
+            <h2 id="dataTitle">Daten</h2>
+
+            <div class="actions">
+                <button id="exportBtn" class="secondary-btn">
+                    Daten exportieren (.json)
+                </button>
+
+                <label for="importFile" class="secondary-btn import-label">
+                    Daten importieren (.json)
+                </label>
+
+                <input type="file" id="importFile" accept=".json" hidden />
+            </div>
+        </section>
+
+        <!-- Notizen -->
+        <section class="card">
+            <h2 id="notesTitle">Meine Notizen</h2>
+
+            <div id="notesContainer"></div>
+        </section>
+
+    </div>
+
+    <!-- JS-Datei -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Grundlayout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Farben */
+:root {
+    --blue: #2563eb;
+    --light-blue: #dbeafe;
+    --background: #f8fbff;
+    --white: #ffffff;
+    --text: #1e293b;
+    --border: #dbe4f0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+/* Sprachbuttons */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    border: 1px solid var(--blue);
+    background: white;
+    color: var(--blue);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: var(--blue);
+    color: white;
+}
+
+/* Karten */
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Überschriften */
+.card h2 {
+    margin-bottom: 15px;
+    color: var(--blue);
+}
+
+/* Hinweisbox */
+.info-box {
+    background: var(--light-blue);
+    border-left: 4px solid var(--blue);
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    min-height: 140px;
+    resize: vertical;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: var(--blue);
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+    border: none;
+    background: var(--blue);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.95rem;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    opacity: 0.9;
+}
+
+/* Import Label */
+.import-label {
+    display: inline-block;
+}
+
+/* Aktionen */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Notizen */
+.note {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 15px;
+    background: #ffffff;
+}
+
+.note-text {
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.note-date {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+/* Löschen Button */
+.delete-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        padding: 14px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}

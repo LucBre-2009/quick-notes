@@ -18,13 +18,16 @@ A minimal note-taking website for GitHub Pages.
 - `style.css`
 - `script.js`
 
-## Usage
+## Usage (local)
 
 1. Download the files
 2. Put them into one folder
 3. Open `index.html`
 
-Or upload them to GitHub Pages.
+## Usage (on github pages with easy access)
+
+1. Open the [Website](https://lucbre-2009.github.io/quick-notes/)
+2. and use it :)
 
 
 ## Notice

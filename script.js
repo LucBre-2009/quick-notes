@@ -29,7 +29,7 @@ const translations = {
         deleteBtn: "Löschen",
         empty: "Noch keine Notizen vorhanden.",
         info:
-            "Hinweis: Notizen werden nur für 1 Tag im Browser gespeichert. Nutze den JSON-Export für eine dauerhafte Sicherung oder den Transfer auf andere Geräte.",
+            "Hinweis: Notizen werden nur für 7 Tage im Browser gespeichert. Nutze den JSON-Export für eine dauerhafte Sicherung oder den Transfer auf andere Geräte.",
         created: "Erstellt"
     },
 
@@ -45,7 +45,7 @@ const translations = {
         deleteBtn: "Delete",
         empty: "No notes available yet.",
         info:
-            "Notice: Notes are only stored in the browser for 1 day. Use the JSON export for permanent backup or transfer to other devices.",
+            "Notice: Notes are only stored in the browser for 7 days. Use the JSON export for permanent backup or transfer to other devices.",
         created: "Created"
     }
 };
